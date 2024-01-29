@@ -1,29 +1,29 @@
-# ss14-tts-api
+# SS14 Silero TTS API
 
-### сборка своего образа
+### Сборка своего образа
 ```
 docker build . -t ss14-tts-api:latest
 docker run -it -d --name ss14tts -p 5000:5000 ss14-tts-api:latest
 ```
 
-### запуск в докере
+### Запуск с Docker
 ```
 docker run -it -d --name ss14tts -p 5000:5000 backmen/ss14-tts:latest
 ```
 
-### удаление (для обновления)
+### Удаление (для обновления)
 ```
 docker rm -f ss14tts
 ```
 
-просмотр логов в докере:
+Просмотр логов в докере:
 ```
 docker logs ss14tts -f
 ```
 
-### запуск без docker
+### Запуск без Docker
 
-windows: https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
+Windows: https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
 
 !!! выше версии 3.9 не работет !!!
 
@@ -32,9 +32,9 @@ pip3 install -r ./requirements.txt --extra-index-url https://download.pytorch.or
 python ss14tts.py
 ```
 
-### Прочие
+### Прочее
 
-конфиг:
+Конфигурация:
 
 ```
 [tts]
@@ -44,10 +44,10 @@ enabled=true
 ```
 
 
-файл с бесплатными голосами:
+Файл с бесплатными голосами:
 > tts-voices.yml
 
-копирнуть в /Resources/Prototypes/Corvax
+Копировать в /Resources/Prototypes/Corvax
 
 ### Скрипт быстрого запуска
 
